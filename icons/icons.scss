@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Load";
+  src: url("../icons/load/Flaticon.eot"),
+       url("../icons/load/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../icons/load/Flaticon.woff") format("woff"),
+       url("../icons/load/Flaticon.ttf") format("truetype"),
+       url("../icons/load/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "fontsocial";
+  src: url("../icons/fontsocial/Flaticon.eot"),
+       url("../icons/fontsocial/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../icons/fontsocial/Flaticon.woff2") format("woff2"),
+       url("../icons/fontsocial/Flaticon.woff") format("woff"),
+       url("../icons/fontsocial/Flaticon.ttf") format("truetype"),
+       url("../icons/fontsocial/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icons/icomoon.eot'),
+        url('../icons/icomoon.eot#iefix') format('embedded-opentype'),
+        url('../icons/icomoon.ttf') format('truetype'),
+        url('../icons/icomoon.woff') format('woff'),
+        url('../icons/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flaticon";
+  src: url("../icons/Flaticon.eot"),
+       url("../icons/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../icons/Flaticon.woff") format("woff"),
+       url("../icons/Flaticon.ttf") format("truetype"),
+       url("../icons/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  &:before{
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+[class^="flaticon-"], [class*=" flaticon-"] {
+  &:before{
+    font-family: Flaticon;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }   
+}
+[class^="fontsocial-"], [class*=" fontsocial-"] {
+  &:before{
+    font-family: fontsocial;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }   
+}
+[class^="load-"], [class*=" load-"] {
+  &:after{
+    font-family: Load;
+    font-size:15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  &:before{
+    font-family: Load;
+    font-size:15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.flaticon-apagar:before { content: "\f101"; }
+.flaticon-factura:before { content: "\f100"; }
+.fontsocial-spinner-of-dots:before { content: "\f101"; }
+.fontsocial-whatsapp:before { 
+  content: "\f100";
+  font-size: 18px !important;
+
+}
+.icon-abottom:before {
+  content: "\e908";
+}
+.icon-add:before {
+  content: "\e90d";
+}
+.icon-aleft:before {
+  content: "\e907";
+}
+.icon-arigth:before {
+  content: "\e906";
+}
+.icon-arrow:before {
+  content: "\e914";
+}
+.icon-atop:before {
+  content: "\e905";
+}
+.icon-book:before {
+  content: "\e904";
+}
+.icon-calendar:before {
+  content: "\e90b";
+}
+.icon-cancel:before {
+  content: "\e911";
+}
+.icon-car:before {
+  content: "\e900";
+}
+.icon-catalog:before {
+  content: "\e912";
+}
+.icon-check:before {
+  content: "\e90c";
+}
+.icon-checkbox:before {
+  content: "\ea53";
+}
+.icon-checked:before {
+  content: "\ea52";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-coupon:before {
+  content: "\e91c";
+}
+.icon-edit:before {
+  content: "\e91b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-google:before {
+  background-image: url('../img/googleimg.svg');
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  content: "";
+  height: 20px;
+  width: 20px;
+}
+.icon-google-plus:before{
+  content:"\e915";
+  font-size:27px !important;
+}
+.icon-home:before {
+  content: "\e90f";
+}
+.icon-info:before {
+  content: "\e920";
+}
+.icon-instagram:before {
+  content: "\e913";
+}
+.icon-mail:before {
+  content: "\e909";
+}
+.icon-map-location:before {
+  content: "\e91e";
+}
+.icon-microphone:before {
+  content: "\e91a";
+}
+.icon-minus:before {
+  content: "\e90e";
+}
+.icon-phone:before {
+  content: "\e903";
+}
+.icon-phone24:before {
+  content: "\e902";
+}
+.icon-pin:before {
+  content: "\e90a";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-register:before {
+  content: "\e9b8";
+}
+.icon-reload:before {
+  content: "\ea2e";
+}
+.icon-search:before {
+  content: "\e918";
+}
+.icon-send:before {
+  content: "\e901";
+}
+.icon-trash:before {
+  content: "\e917";
+}
+.icon-truck:before {
+  content: "\e919";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-user:before {
+  content: "\e910";
+}
+.icon-user1:before {
+  content: "\e91f";
+}
+.icon-wallet:before {
+  content: "\e91d";
+}
+.load-l:before { 
+  animation: load_animate 1s cubic-bezier(0, 0, 0.41, 0.44) infinite;
+  content: "\f100";
+  display: inline-block;
+  margin-right: 10px;
+}
+.load-r:after { 
+  animation: load_animate 1s cubic-bezier(0, 0, 0.41, 0.44) infinite;
+  content: "\f100";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes load_animate {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}

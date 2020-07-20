@@ -1,0 +1,369 @@
+.mdl {
+    height: 100%;
+    left: 0;
+    margin: 0 !important;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .w-m {
+        background-color: #fff;
+        border-radius: 0.25rem;
+        margin: 0 auto;
+        max-width: 280px;
+        opacity: 0;
+        overflow: hidden;
+        position: relative;
+        top: 50%;
+        transform: scale(0.5) translateY(-50%);
+        transition: all 380ms cubic-bezier(0.26, 1.48, 0.47, 0.96) 200ms;
+        visibility: visible;
+        width: 98%;
+        z-index: 99;
+        h3, p {
+            padding: 0.5rem 1rem;
+            width: 100%;
+        }
+        h3 {
+            background-color: $colorred;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            order: -1;
+        }
+        p {
+            font-weight: 400;
+            text-align: center;
+        }
+        .btn {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+            max-width: 80px;
+        }
+    }
+    &.show {
+        .w-m {
+            opacity: 1;
+            transform: scale(1) translateY(-50%);
+            transform-origin: center;
+            visibility: visible;
+        }
+    }
+}
+.mdl-account {
+    label {
+        margin-bottom: 0.2rem;
+        order: -1;
+        text-align: left;
+        width: 100%;
+    }
+    .c-i {
+        margin: 0;
+        margin-bottom: 10px !important;
+        margin-right: auto;
+        width: calc(50% - 0.5rem);
+        width: 46%;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+    .f-ww {
+        display: flex;
+        justify-content: space-around;
+    }
+    .w {
+        max-width: 540px;
+        padding-bottom: 1rem;
+        width: 94%;
+    }
+    #msg-form {
+        width: 100%;
+    }
+}
+.modal {
+    height: 100%;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: -9;
+    h1 {
+        background-color: #e0e0e0;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        order: -2;
+        padding: 0.75rem 2rem;
+        text-transform: none;
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    p {
+        font-size: 0.75rem;
+        margin: 0 auto 1rem auto;
+        width: 80%;
+    }
+    .btn {
+        margin-top: 0.5rem;
+        max-width: 80%;
+        width: 100%;
+    }
+    .btn-back, .btn-close {
+        background-color: transparent;
+        font-size: 0;
+        height: 46px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 46px;
+        z-index: 1;
+        &:before {
+            font-size: 24px;
+        }
+    }
+    .btn-back {
+        align-items: center;
+        display: flex;
+        left: 0;
+        right: inherit;
+        &:before {
+            font-size: 30px;
+        }
+    }
+    .btn-s {
+        margin: 0 0.25rem;
+        width: 39%;
+    }
+    .btn-save-invoice {
+        margin: auto;
+        margin-bottom: 0;
+        margin-top: 18px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .btnBack {
+        margin-right: auto;
+    }
+    .c-i {
+        margin-bottom: 0.25rem;
+        margin-top: 0.25rem;
+        max-width: 80%;
+        width: 100%;
+    }
+    .frm-direccion {
+        .btn {
+            margin-bottom: 0;
+            margin-top: auto;
+            max-width: none;
+        }
+    }
+    .frm-envio {
+        padding-bottom: 2rem;
+    }
+    .frmLogin, .frmLostPassword, .recoveryPass {
+        position: relative;
+        width: 100%;
+    }
+    .frmLogin {
+        .bg-r {
+            order: 2;
+            &#idBtnLogin {
+                margin-bottom: 10px;
+            }
+        }
+        .icon-facebook, .icon-google {
+            margin-bottom: 0.75rem;
+            order: 4;
+            width: calc(41% - 0.5rem);
+        }
+        .icon-facebook {
+            margin-right: 0.25rem;
+        }
+        .icon-google {
+            margin-left: 0.25rem;
+        }
+        .line {
+            order: 3;
+        }
+        .link {
+            margin: 1rem auto;
+            order: 1;
+        }
+    }
+    .icon-calendar {
+        position: relative;
+        &:before {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
+    }
+    .line {
+        width: 100%;
+        &:after, &:before {
+            background-color: #eaeaea;
+            content: "";
+            height: 1px;
+            margin: 0.75rem 1rem;
+            width: 30%;
+        }
+    }
+    .link {
+        color: #007bff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 1.75rem auto;
+        text-decoration: underline;
+        &:first-child {
+            padding-left: 2.25rem;
+            width: 40%;
+        }
+        &:last-child {
+            padding-right: 2.25rem;
+            text-align: right;
+            width: 60%;
+        }
+    }
+    .logo {
+        height: auto;
+        margin-bottom: 9px;
+        width: 100px;
+    }
+    .msg-error {
+        margin-bottom: 0.75rem;
+        order: -1;
+        width: 80%;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .pass {
+        width: 33.333%;
+    }
+    .select2 {
+        margin-bottom: 0;
+    }
+    .slider {
+        min-width: 300%;
+        overflow-x: auto;
+        width: 300%;
+    }
+    .t-modal {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .w {
+        background: #ffffff;
+        border-radius: 4px;
+        border-radius: 2px;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        left: 0;
+        margin: 0 auto;
+        max-width: 350px;
+        opacity: 0;
+        overflow-x: hidden;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        transition: all 0.45s ease;
+        visibility: hidden;
+        width: 80%;
+        z-index: 2;
+    }
+    &.close-modal {
+        .w {
+            animation: bounceOutUp 0.65s 1 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+        }
+    }
+    &.open-modal {
+        opacity: 1;
+        transition: all 0.3s ease;
+        visibility: visible;
+        z-index: 9999999;
+        .w {
+            animation: fadeInUp 0.4s 1 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+        }
+    }
+    #idLostPass {
+        margin-bottom: 0px;
+        padding-right: 2.25rem;
+        text-align: right;
+        width: 60%;
+    }
+    #idSignin {
+        padding-left: 2.25rem;
+        width: 40%;
+    }
+}
+#idGetSend {
+    .cont-select {
+        margin-bottom: 5px;
+        width: 60%;
+    }
+}
+#idGetZone {
+    .w {
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .modal {
+        h1 {
+            margin-bottom: 1.25rem;
+            padding: 0.75rem 2.5rem;
+        }
+        .btn-s {
+            margin-bottom: 0.45rem;
+            margin-top: 0.45rem;
+            width: 100%;
+        }
+        .frmLogin {
+            .icon-facebook, .icon-google {
+                margin-bottom: 1.25rem;
+            }
+            .line {
+                &:before {
+                    margin: 1.25rem 1rem;
+                }
+            }
+        }
+        .line {
+            &:after, &:before {
+                margin: 1rem;
+            }
+        }
+        .logo {
+            margin-bottom: 13px;
+            width: 200px;
+        }
+        .w {
+            top: 6rem;
+        }
+    }
+}

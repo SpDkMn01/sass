@@ -1,0 +1,29 @@
+.snippets {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    input {
+        height: 34px;
+        font-weight: 700;
+        margin: 0 0.5rem;
+        max-width: 40px;
+        padding: 10px 4px;
+        text-align: center;
+        width: 100%;
+    }
+    .btn {
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 0.6rem;
+        line-height: 1;
+        min-height: 28px;
+        padding: 4px 6px;
+        width: 28px;
+        &.btn-delete {
+            color: $colorred;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-left: 0.5rem;
+        }
+    }
+}

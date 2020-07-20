@@ -1,0 +1,50 @@
+#idBreadcrumb {
+    font-size: 12px;
+    margin: 0.25rem 0;
+    overflow: hidden;
+    li {
+        align-items: center;
+        display: flex;
+        a, span {
+            display: block;
+            padding: 0.25rem 0.12rem;
+        }
+        span {
+            color: #636363;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        &:after {
+            content: "\e906";
+            @include icon();
+            font-size: 1rem;
+        }
+        &.icon-home {
+            line-height: 1.5;
+            position: relative;
+            text-align: center;
+            &:before {
+                font-size: 1rem;
+                margin-bottom: 4px;
+                margin-right: 0.25rem;
+            }
+        }
+        &:hover {
+            a {
+                color: #000;
+            }
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    #idBreadcrumb {
+        background-color: #f3f3f3;
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem;
+    }
+}

@@ -1,0 +1,40 @@
+.displaynone {
+    display: none;
+}
+.modal-inputs {
+    padding: 0 0 0.9rem;
+    width: 80%;
+}
+.estudiante-css {
+    background-image: url("../img/estudiantes.jpg");
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 12rem;
+    width: 100%;
+}
+.form-student-css {
+    .c-i {
+        margin-top: 0.7rem;
+        max-width: 100%;
+    }
+    .f-weight-student {
+        color: #000000;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .msg-error {
+        order: 0 !important;
+    }
+}
+.image-confirm {
+    margin: 15px 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.modal-inputs input {
+    margin-top: 0.3rem;
+}
+.student-content {
+    margin: 5px 0;
+}

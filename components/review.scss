@@ -1,0 +1,331 @@
+.point {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    img {
+        height: 20px;
+        margin-left: 3px;
+        width: 20px;
+    }
+}
+.review {
+    margin: auto;
+    max-width: 1170px;
+    width: 100%;
+    h2 {
+        width: 100%;
+    }
+    .cont {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+        .box1 {
+            align-items: baseline;
+            display: flex;
+            font-weight: 700;
+            padding-right: 30px;
+            width: 100%;
+            span {
+                font-size: 26px;
+                font-weight: 700;
+            }
+            .point {
+                width: 120px;
+            }
+        }
+        .box2 {
+            width: 100%;
+            span {
+                font-size: 12px;
+            }
+            .barra {
+                background: #ccc;
+                flex-grow: 1;
+                height: 10px;
+                margin-left: 8px;
+                position: relative;
+                width: 50%;
+                .red {
+                    background: $colorred;
+                    height: 10px;
+                    left: 0px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            .fill {
+                align-items: center;
+                display: flex;
+            }
+            .point {
+                height: 18px;
+                width: 90px;
+                img {
+                    height: 14px;
+                    margin-left: 2px;
+                    width: 14px;
+                }
+            }
+        }
+        .box3 {
+            flex-grow: 1;
+            height: 40px;
+            margin-top: 10px;
+            position: relative;
+            width: 100%;
+            .btn {
+                left: auto;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                width: auto;
+                &:before {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .form {
+        height: 0;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        transition: height 1s;
+        width: 90%;
+        &.active {
+            border-top: 1px solid #eaeaea;
+            height: auto;
+            padding-top: 40px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        span {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .box_msg {
+            background: #ffffffe0;
+            left: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            .box {
+                bottom: 0;
+                color: #499e49;
+                height: 35px;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                white-space: inherit;
+                width: 280px;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .fill {
+            margin-bottom: 10px;
+            min-height: 60px;
+            position: relative;
+            width: 100%;
+            label {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            input, textarea {
+                display: block;
+                font-family: inherit;
+                width: 100%;
+            }
+            textarea {
+                height: 100px;
+            }
+            .btn {
+                left: auto;
+                margin-top: 20px;
+                position: absolute;
+                right: 0;
+                width: 200px;
+            }
+        }
+        .point {
+            cursor: pointer;
+        }
+    }
+    .post {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        h2 {
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 12px;
+            span {
+                border-bottom: 2px solid $colorred;
+            }
+        }
+        .fill {
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+            width: 100%;
+            h3 {
+                font-weight: 700;
+                font-size: 14px;
+                width: 100%;
+            }
+            h4 {
+                font-weight: 700;
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+            .point {
+                height: auto;
+                padding: 5px 0;
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .review {
+        margin: auto;
+        max-width: 1170px;
+        width: 100%;
+        h2 {
+            width: 100%;
+        }
+        .cont {
+            display: flex;
+            margin: auto;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            width: 100%;
+            .box1 {
+                width: auto;
+            }
+            .box2 {
+                border-left: 1px solid #eaeaea;
+                padding-left: 30px;
+                width: 30%;
+                span {
+                    font-size: 12px;
+                }
+                .fill {
+                    display: flex;
+                }
+                .point {
+                    height: 18px;
+                    width: 90px;
+                    img {
+                        height: 14px;
+                        margin-left: 2px;
+                        width: 14px;
+                    }
+                }
+            }
+            .box3 {
+                margin-top: 0;
+                width: 40%;
+            }
+        }
+        .form {
+            height: 0;
+            margin: auto;
+            overflow: hidden;
+            transition: height 1s;
+            width: 100%;
+            &.active {
+                border-top: 1px solid #eaeaea;
+                padding-top: 40px;
+            }
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            span {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .point {
+                cursor: pointer;
+            }
+            .fill {
+                margin-bottom: 10px;
+                min-height: 60px;
+                position: relative;
+                width: 100%;
+                label {
+                    display: block;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                input, textarea {
+                    display: block;
+                    width: 100%;
+                }
+                textarea {
+                    height: 100px;
+                }
+                .btn {
+                    left: auto;
+                    margin-top: 20px;
+                    position: absolute;
+                    right: 0;
+                    width: 200px;
+                }
+            }
+        }
+        .post {
+            margin: auto;
+            margin-bottom: 20px;
+            width: 100%;
+            h2 {
+                border-bottom: 1px solid #eaeaea;
+                padding-bottom: 12px;
+                span {
+                    border-bottom: 2px solid $colorred;
+                }
+            }
+            .fill {
+                border-bottom: 1px solid #eaeaea;
+                padding: 10px 0;
+                width: 100%;
+                h3 {
+                    font-weight: 700;
+                    font-size: 14px;
+                    width: 100%;
+                }
+                h4 {
+                    font-weight: 700;
+                    width: 100%;
+                }
+                p {
+                    width: 100%;
+                }
+                .point {
+                    height: auto;
+                    padding: 5px 0;
+                    img {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

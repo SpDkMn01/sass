@@ -1,0 +1,69 @@
+@keyframes arrow{
+	from,to{
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	from{
+		transform: translateX(-10px);
+	}
+	top{
+		transform: translateX(10px);
+	}
+}
+@keyframes arrow-left{
+	from,to{
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	from{
+		transform: translateX(-10px) scale(-1);
+	}
+	top{
+		transform: translateX(10px) scale(-1);
+	}
+}
+@keyframes beat{
+	to { 
+        transform: scale(1.05); 
+    }
+}
+@keyframes bounceOutUp{
+    from, 60%, 75%, 90%, to{
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+	0%, from{
+		opacity: 1;
+		transform: none;
+		visibility: visible;
+	}
+	20%{
+		opacity: 1;
+		transform: translate3d(0, -10px, 0);
+		visibility: visible;
+	}
+	40%, 45%{
+		opacity: 1;
+		transform: translate3d(0, 20px, 0);
+		visibility: visible;
+	}
+	100%, to{
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+		visibility: hidden;
+	}
+}
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 50%, 0);
+		visibility: hidden;
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		visibility: visible;
+	}
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

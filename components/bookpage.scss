@@ -1,0 +1,93 @@
+body#bookpage {
+    .bookPage {
+        margin: auto;
+        width: 90%;
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            input {
+                width: 100%;
+            }
+            label {
+                display: block;
+                font-size: 0.75rem;
+                margin-bottom: 0.2rem;
+                width: 100%;
+            }
+            select.ui-datepicker-year {
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                padding: 2px 15px;
+                -webkit-appearance: menulist;
+            }
+            textarea {
+                width: 100%;
+            }
+            .box {
+                margin: auto 0.5rem;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+            .box2 {
+                margin: auto 0.5rem;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+            .btn {
+                max-width: 140px;
+                padding: 0.75rem 0;
+                width: 50%;
+            }
+            .select2 {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    body#bookpage {
+        .bookPage {
+            max-width: 1170px;
+            width: 90%;
+            .content {
+                width: 100%;
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                input {
+                    width: 100%;
+                }
+                label {
+                    display: block;
+                    font-size: 0.75rem;
+                    margin-bottom: 0.2rem;
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+                .box {
+                    flex-grow: 1;
+                    margin: auto 0.5rem;
+                    margin-bottom: 1rem;
+                    margin-top: 0px;
+                    width: calc(50% - 1rem);
+                }
+                .btn {
+                    width: 140px;
+                }
+                .select2 {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

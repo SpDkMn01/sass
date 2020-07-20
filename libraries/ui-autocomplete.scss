@@ -1,0 +1,49 @@
+.device-mobile {
+    .ui-widget {
+        &.ui-autocomplete {
+            left: 0px !important;
+        }
+    }
+}
+.ui-autocomplete {
+    cursor: default;
+    left: 0;
+    position: fixed;
+    top: 0;
+}
+.ui-widget {
+    &.ui-autocomplete {
+        background: #fff;
+        border: 1px solid #efefef;
+        border-radius: 8px;
+        box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.1);
+        font-size: 13px;
+        max-height: 250px;
+        min-width: 320px !important;
+        overflow: auto;
+        width: auto !important;
+        z-index: 9;
+        z-index: 10;
+        .ui-menu-item {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e6e6e6;
+            flex-grow: 1;
+            .ui-menu-item-wrapper {
+                cursor: pointer;
+                display: block;
+                padding: 0.35rem 0.75rem;
+                transition: all 0.2s ease;
+                width: 100%;
+            }
+            &:hover {
+                .ui-menu-item-wrapper {
+                    background-color: $colorred;
+                    color: #fff;
+                }
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

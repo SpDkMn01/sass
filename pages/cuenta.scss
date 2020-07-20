@@ -1,0 +1,310 @@
+.boxModal {
+    background: rgba(17, 17, 17, 0.75);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .box {
+        background: #fff;
+        border-radius: 4px;
+        left: 0;
+        margin: auto;
+        max-width: 350px;
+        padding: 40px 20px;
+        position: absolute;
+        right: 0;
+        top: 30%;
+        width: 90%;
+        input {
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+            min-width: unset;
+            width: 250px;
+        }
+        p {
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .btn {
+            margin: auto;
+            max-width: unset;
+            width: 250px;
+        }
+        .close {
+            color: #e30b17;
+            cursor: pointer;
+            font-size: 24px;
+            height: 20px;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            width: 20px;
+            &:before {
+                content: "\e911";
+                font-family: "icomoon";
+                font-style: normal;
+                font-variant: normal;
+                font-weight: normal;
+                line-height: 1;
+                speak: none;
+                text-transform: none;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    }
+}
+.invoice-form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .c-i {
+        margin: auto;
+        width: 90%;
+    }
+    #msg-form {
+        width: 100%;
+    }
+}
+.registration {
+    justify-content: center;
+    form {
+        &.w {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+.sec-cuenta {
+    margin-bottom: 2rem;
+    width: 85%;
+    a {
+        font-weight: 700;
+        line-height: 3;
+    }
+    h1 {
+        order: -2;
+        position: relative;
+        &.icon-abottom {
+            &:before {
+                font-size: 2rem;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    input {
+        margin-bottom: 0.75rem;
+        width: 100%;
+    }
+    label {
+        margin-bottom: 0.25rem;
+        order: -1;
+        width: 100%;
+    }
+    table {
+        &.table-direcciones, &.table-pago {
+            margin-bottom: 1.5rem;
+            tbody {
+                tr {
+                    td {
+                        &:first-child {
+                            text-align: left;
+                        }
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0.75rem auto 1rem auto;
+        width: 100%;
+        &.btn-signin-register {
+            background: #ef5059;
+        }
+    }
+    .list-pay {
+        width: 100% !important;
+        button {
+            color: $colorred;
+            font-size: 0;
+            padding: 0 5%;
+            &:before {
+                font-size: 18px;
+            }
+        }
+        img {
+            margin-right: 0.25rem;
+            width: 28px;
+        }
+        .item-pay {
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            small {
+                font-size: 0.7rem;
+                font-weight: 600;
+                margin-left: 0.25rem;
+            }
+            span {
+                font-size: 13px;
+                &:after {
+                    content: "...";
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-left: 0.1rem;
+                    margin-right: 1rem;
+                }
+            }
+            .date, .phone {
+                color: #5b5b59;
+            }
+        }
+    }
+    .menu-cuenta {
+        order: -1;
+    }
+    .msg {
+        &.empty {
+            line-height: 0.75;
+            text-align: left;
+            width: 100%;
+        }
+    }
+    .msg-error {
+        margin: 1rem 0;
+        order: -3;
+        width: 100%;
+    }
+    .renew-password {
+        width: 100%;
+    }
+    .w {
+        margin-bottom: 1rem;
+        width: 100%;
+        .sb {
+            margin-bottom: 1rem !important;
+        }
+    }
+}
+#history {
+    .icon-factura {
+        color: #969696;
+        font-size: 18px;
+        &:hover {
+            color: #e30b17;
+        }
+    }
+    .msg {
+        border-radius: 2rem;
+        display: inline-block;
+        font-weight: 600;
+        overflow: hidden;
+        padding: 8px 12px;
+        text-align: center;
+        text-overflow: ellipsis;
+        vertical-align: baseline;
+        width: 100px;
+        white-space: pre-wrap;
+        white-space: nowrap;
+        &.error {
+            background-color: #fff;
+            border: 1px solid #e30b17;
+            color: #e30b17;
+        }
+        &.espera {
+            background-color: #fff;
+            border: 1px solid #6f6f6f;
+            color: #8e8e8e;
+        }
+        &.pagado {
+            border: 1px solid #41a5e1;
+            color: #41a5e1;
+        }
+        &.procesado {
+            background-color: #fff;
+            border: 1px solid #31b131;
+            color: #31b131;
+        }
+        &.separado {
+            background-color: #fff1372b;
+            border: 1px solid #fff137;
+            color: #4a4a4a;
+        }
+    }
+}
+#notifications {
+    .container {
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .box_invoice {
+        .sb-l {
+            margin-top: 15px;
+        }
+    }
+    .sec-cuenta {
+        width: 95%;
+        .b-l {
+            &:before {
+                display: none;
+            }
+        }
+        .btn {
+            margin-right: 0;
+            max-width: 200px;
+        }
+        .w {
+            flex-grow: 1;
+            width: 60%;
+            > * {
+                margin-left: 0.5rem;
+            }
+            .c-full {
+                padding-left: 0.5rem;
+            }
+            .c-i {
+                margin-right: 0.5rem;
+                width: calc(50% - 1rem);
+            }
+            .c-small {
+                width: calc(50% - (50% / 2) - 1rem);
+            }
+            .sb {
+                margin-bottom: 2rem !important;
+            }
+            .sb-l {
+                width: 100%;
+            }
+        }
+    }
+    #history {
+        .msg {
+            width: 150px;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .invoice-form {
+        .c-i {
+            width: 48%;
+        }
+    }
+}
