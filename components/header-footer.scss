@@ -61,7 +61,6 @@ form.w {
         }
     }
     .icon-search.active {
-        opacity: 1;
         opacity: 1 !important;
         transform: none;
         visibility: visible;
@@ -1212,7 +1211,6 @@ form.w {
                     form {
                         margin-right: 12px;
                         flex-grow: 1;
-                        flex-grow: 1;
                         order: 0;
                         width: 56%;
                         input {
@@ -1315,7 +1313,6 @@ form.w {
                 z-index: 2;
                 .icon-search, .icon-truck, .icon-user {
                     align-items: center;
-                    display: flex;
                     display: flex;
                     height: 26px;
                     justify-content: center;
